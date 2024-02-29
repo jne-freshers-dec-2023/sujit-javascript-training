@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="outer" style=" height: 500px; width: 500px;border: green;background-color: green;">
+        <div id="inner" style=" height: 300px; width: 300px;border: red;background-color: red;">
+
+        </div>
+    </div>
+    <script>
+        document.getElementById("outer").addEventListener("mouseenter",function(e){
+            console.log(e);
+            var outerdiv = document.getElementById("outer");
+            console.log(outerdiv);
+            outerdiv.style.backgroundColor = "blue";
+        })
+    </script>
+</body>
+</html>
