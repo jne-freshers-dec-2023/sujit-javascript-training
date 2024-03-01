@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body style="height: 100%;width: 100%;">
+    <div style="align-content: center;justify-content: center;display: flex;">
+        <div style="width: 25%;margin-top: 200px;text-align: center;">
+            <form action="">
+                <div>
+                    <label>Title:  </label>
+                    <label>Mr.</label>
+                    <input type="radio" name="title" value="Mr.">
+                    <label>Mrs.</label>
+                    <input type="radio" name="title" value="Mrs.">
+                </div><br>
+                <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" placeholder="sujit" required>
+                </div><br>
+                <div>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" placeholder="mohapatra" required>
+                </div><br>
+                <div>
+                    <label for="mnum">Phone: </label>
+                    <input type="tel" name="mnum" placeholder="(91)4649846714" required>
+                </div><br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="example@gamil.com" required>
+                </div><br>
+                <div>
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" required>
+                </div><br>
+
+                <div>
+                    <label for="count">Quantity</label>
+                    <input type="number" name="count" min="0" max="500" value="1">
+                </div><br>
+                <div>
+                    <label for="bd">DOB:</label>
+                    <input type="date" name="bd" required>
+                </div><br>
+                <div>
+                    <label for="po">payment Option: </label>
+                    <select name="po">
+                        <option value="">COD</option>
+                        <option value="">CARD</option>
+                        <option value="">UPI</option>
+                    </select required>
+                </div><br>
+                <div>
+                    <label for="tc">T&C</label>
+                    <input type="checkbox">
+                </div><br>
+
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
