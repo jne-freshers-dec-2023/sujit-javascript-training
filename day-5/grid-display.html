@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .con{
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-auto-rows: minmax(100px , auto);
+        grid-gap: 20px;
+        grid-template-areas: "header header sidebar"
+        "contecnt content sidebar";
+        justify-content: center;
+    }
+    .div{
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .div1{
+            
+            grid-area: header;
+        }
+        .div2{
+            grid-area: sidebar;
+            
+        }
+        .div3{
+            grid-area: content;
+ 
+        }
+        .div5{
+          grid-column: span 3;
+        }
+</style>
+<body>
+    <body>
+        <div class="con">
+            <div class="div1 div">
+                <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint suscipit distinctio tempore impedit repellat voluptas aliquid a, harum earum exercitationem ex dolore sunt culpa doloribus ducimus veritatis ratione, aut soluta?</div>
+            </div>
+            <div class="div2 div"></div>
+            <div class="div3 div"></div>
+            <div class="div4 div"></div>
+            <div class="div5 div"></div>
+        </div>
+    </body>
+</body>
+</html>

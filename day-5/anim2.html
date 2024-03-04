@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        box-sizing: border-box;
+    }
+
+    .out {
+        height: 300px;
+        width: 300px;
+        /* border: 2px solid black; */
+        background-color: green;
+    }
+
+    .inner {
+        height: 150px;
+        width: 150px;
+        /* border: 2px solid black; */
+        background-color: blueviolet;
+
+    }
+
+    .out:hover .inner {
+        animation: left-to-right 2s ease-in forwards infinite alternate;
+
+    }
+
+    @keyframes left-to-right {
+        0% {
+
+            transform: translateX(0%);
+        }
+
+        25% {
+            background-color: blue;
+            transform: translateY(100%);
+        }
+
+        75% {
+            background-color: brown;
+            transform: translateX(100%) translateY(100%);
+        }
+
+        100% {
+            background-color: green;
+            transform: translateX(100%);
+        }
+    }
+</style>
+
+<body>
+    <div class="out">
+        <div class="inner"></div>
+    </div>
+</body>
+
+</html>
